@@ -12,7 +12,7 @@ class Player
       # ヒント! 「while」と「if」を使用します。
       # 以降の型の例に沿って実装しましょう ※実装する時場合はコメントアウトに注意しましょう
       # while true
-      while true
+      while true do
         # if 条件を書く (「input_hand」(取得した値)が「0, 1, 2」のいずれかの場合だった場合)
         if input_hand == "0" || input_hand == "1" || input_hand == "2"
           # 「input_hand」(取得した値)をそのまま返します。
@@ -61,7 +61,7 @@ class Janken
         return true
     #  elsif もしも下記の組み合わせだった場合
           #  (player_hand == 0 && enemy_hand == 1) || (player_hand == 1 && enemy_hand == 2) || (player_hand == 2 && enemy_hand == 0)
-      else if (player_hand == 0 && enemy_hand == 1) || (player_hand == 1 && enemy_hand == 2) || (player_hand == 2 && enemy_hand == 0)
+      elseif (player_hand == 0 && enemy_hand == 1) || (player_hand == 1 && enemy_hand == 2) || (player_hand == 2 && enemy_hand == 0)
       # 「あなたの勝ちです」を出力します。
         puts "あなたの勝ちです"
       # whileを終了させる「false」を返してじゃんけんを終了させます。
@@ -88,7 +88,7 @@ janken = Janken.new
 next_game = true
 # 以降の型の例に沿って実装しましょう ※実装する時場合はコメントアウトに注意しましょう。
 # while next_game
-while next_game
+while next_game do
 # 変数「next_game」にじゃんけんを実行して返ってきた値(戻り値)を代入します。
   # 「janken.pon(player.hand, enemy.hand)」でじゃんけんを実行しています。
   next_game = janken.pon(player.hand, enemy.hand)
